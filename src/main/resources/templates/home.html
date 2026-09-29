@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="vi"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout}">
+<head>
+    <title>Trang chủ</title>
+</head>
+<body>
+<main layout:fragment="content">
+    <div class="card">
+        <h1>Trang chủ UTEShop</h1>
+        <p>Xin chào <strong th:text="${#authentication.principal.fullName}" style="color: #2563eb;">User</strong>!</p>
+        <p>Hệ thống hỗ trợ <b>Custom Login</b> cho phép đăng nhập linh hoạt bằng cả <b>Username</b> hoặc <b>Email</b>.</p>
+        <p>Thông tin chi tiết của người dùng đang đăng nhập (Fullname, Avatar, Email, Role) được hiển thị đầy đủ trên thanh <b>Header</b> phía trên.</p>
+    </div>
+</main>
+</body>
+</html>
